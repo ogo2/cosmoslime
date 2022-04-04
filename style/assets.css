@@ -1,0 +1,189 @@
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+   background-color: #F1EEF2;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+.container {
+  max-width: 1370px;
+  height: 100%;
+  margin: 0 auto;
+}
+@font-face {
+  font-family: "Montserrat"; 
+  // адрес шрифта и тип 
+  src: url("font/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype"); 
+  src: url("font/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype"); 
+  font-style: normal; 
+  font-weight: normal; 
+} 
+header {
+  width: 100%;
+  border: 1px solid #9989A5;
+  height: 100px;
+  background-color: #F1EEF2;
+  border-radius: 0 0 324px 324px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+header img, object{
+  width: 333px;
+  height: 99px;
+  position: relative;
+  bottom:6px;
+  float: left;
+}
+header ul{
+  float: right;
+  display: inline;
+  margin-top: 30px;
+}
+header li{
+  float: left;
+  margin-left: 20px;
+  list-style: none;
+  color: #9989A5;
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+}
+.section_back{
+  height: 600px;
+    background: linear-gradient(#F2F0F3, #DADDE1);
+
+}
+.section_back2{
+  height: 600px;
+    background: #DADDE1;
+
+}
+.section_one{
+  width: 100%;
+  margin-top: 100px;
+/*  background: linear-gradient(#F2F0F3, #DADDE1);*/
+}
+.block_text_about_1{
+  border: 1px solid #C4C4C4;
+  width: 768px;
+  height: 343px;
+  position: relative;
+  margin-left: 23px;
+
+}
+.about_block_text{
+  width: 760px;
+  float: left;
+}
+.about_h1{
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 78px;
+  position: relative;
+  left: 50px;
+
+  color: #24092E;
+}
+.block_text_about_2{
+  border: 1px solid #C4C4C4;
+  width: 768px;
+  height: 343px;
+  position: relative;
+  bottom: 320px;
+}
+.text_about{
+  width: 732px;
+  position: relative;
+  bottom: 650px;  
+  left: 50px;
+}
+.text_about p{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 44px;
+  color: #24092E;
+}
+.face_about{
+  position: relative;
+  left: 10px;
+  bottom: 80px;
+}
+.face_about object{
+  width: 610px;
+  height: 663px;
+}
