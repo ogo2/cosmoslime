@@ -36,6 +36,7 @@ body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
    background-color: #F1EEF2;
+   min-width: 1370px;
 }
 
 /* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
@@ -125,8 +126,13 @@ header li{
     background: linear-gradient(#F2F0F3, #DADDE1);
 
 }
+.section_back3{
+  height: 600px;
+    background: linear-gradient(#DADDE1, #F2F0F3);
+
+}
 .section_back2{
-  height: 1500px;
+  height: 1100px;
   background: #DADDE1;
 
 }
@@ -151,6 +157,7 @@ header li{
   width: 760px;
   position: relative;
   float: right;
+  right: 5%;
   bottom: 450px;
 }
 .about_h1{
@@ -233,7 +240,7 @@ header li{
   background: url(img/prof.png) no-repeat;
   background-size: 100%;
   position: relative;
-  left: 10%;
+  left:5%;
 
 }
 .block_studia{
@@ -257,4 +264,9 @@ header li{
 .photo_studia img{
   width: 395px;
   height: 509px;
+}
+.h1_rew{
+  width: 590px;
+  position: relative;
+  top: 4%;
 }
